@@ -103,7 +103,7 @@
                     });
                 })
                 fileInputPreview.attr("src", base64);
-                base64Output.val(base64);
+                base64Output.val('<img class="base64-image" src="' + base64 + '">');
                 base64OutputLength.text(base64.length.toLocaleString() + " chars");
             });
         }
